@@ -131,14 +131,14 @@ class home extends StatelessWidget {
               },
             ),
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.all(0.5),
-            child: SizedBox(
+            child: Container(
               width: double.infinity,
               height: 659,
               child: News(
                   link:
-                      'https://newsapi.org/v2/top-headlines?country=us&apiKey=0466a7d65c07405da61a72d7b6d6521f'),
+                      'https://newsapi.org/v2/top-headlines?category=general&apiKey=0466a7d65c07405da61a72d7b6d6521f'),
             ),
           ),
         ],

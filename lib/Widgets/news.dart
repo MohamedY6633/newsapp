@@ -73,7 +73,7 @@ class NewsState extends State<News> {
                                   'assets/photos/No-Image-Placeholder.svg.png'),
                             )),
                         Text(
-                          newsItem.title,
+                          newsItem.title ?? '',
                           style: const TextStyle(
                               fontSize: 24,
                               fontFamily: 'TirtoWritterRegular',
@@ -81,7 +81,7 @@ class NewsState extends State<News> {
                               fontWeight: FontWeight.w500),
                         ),
                         Text(
-                          newsItem.Subtitle,
+                          newsItem.Subtitle ?? '',
                           style: const TextStyle(
                               fontSize: 18,
                               fontFamily: 'Tajawal'
